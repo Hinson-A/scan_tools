@@ -6,17 +6,17 @@ Overview
 
 Laser scan processing tools. The meta-package contains:
 
-laser_ortho_projector: 将切斜的雷达数据投影到平面上．
-laser_scan_matcher: 基于pl-icp的扫描匹配的实现，并进行了位姿累加
- laser_scan_matcher 功能包是增量激光扫描配准工具。该软件包允许扫描连续的 sensor_msgs / LaserScan 消息之间的匹配，
+* laser_ortho_projector: 将切斜的雷达数据投影到平面上．
+* laser_scan_matcher: 基于pl-icp的扫描匹配的实现，并进行了位姿累加
+*  laser_scan_matcher 功能包是增量激光扫描配准工具。该软件包允许扫描连续的 sensor_msgs / LaserScan 消息之间的匹配，
  并将估计的激光位置发布为 geometry_msgs / Pose2D 或 tf 变换。
  该包可以在没有其他传感器提供的任何测距估计的情况下使用。
  因此，它可以作为独立的里程计算器估算器
-laser_scan_sparsifier: 对雷达数据进行稀疏处理
-laser_scan_splitter: 将一帧雷达数据分段，并发布出去
-ncd_parser: 读取New College Dataset，转换成ros的scan 与 odometry 发布出去
-polar_scan_matcher: 基于Polar Scan Matcher的扫描匹配器的ros实现
-scan_to_cloud_converter: 将 sensor_msgs/LaserScan 数据转成 sensor_msgs/PointCloud2 的数据格式
+* laser_scan_sparsifier: 对雷达数据进行稀疏处理
+* laser_scan_splitter: 将一帧雷达数据分段，并发布出去
+* ncd_parser: 读取New College Dataset，转换成ros的scan 与 odometry 发布出去
+* polar_scan_matcher: 基于Polar Scan Matcher的扫描匹配器的ros实现
+* scan_to_cloud_converter: 将 sensor_msgs/LaserScan 数据转成 sensor_msgs/PointCloud2 的数据格式
 
 
  * `laser_ortho_projector`: calculates orthogonal projections of LaserScan messages
